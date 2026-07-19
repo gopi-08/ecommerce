@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Website</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header>
+
+        <nav class="navbar">
+
+            <div class="logo">
+                <img src="images/logo.png" alt="ShopEase Logo">
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#categories">Categories</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <div class="search-box">
+                <input type="text" placeholder="Search Products...">
+            </div>
+
+            <div class="cart" id="cartIcon">
+                🛒 <span id="cart-count">0</span>
+            </div>
+
+        </nav>
+
+    </header>
+
+    <!-- ================= HERO ================= -->
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <!-- Keep empty because the banner image already contains text -->
+
+            <button id="heroShopBtn">
+                Shop Now
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- ================= CATEGORIES ================= -->
+
+    <section class="categories" id="categories">
+
+        <h2>Shop By Category</h2>
+
+        <div class="category-container">
+
+            <div class="category-card" data-category="electronics">
+                💻 Electronics
+            </div>
+
+            <div class="category-card" data-category="clothing">
+                👕 Clothing
+            </div>
+
+            <div class="category-card" data-category="accessories">
+                ⌚ Accessories
+            </div>
+
+            <div class="category-card" data-category="footwear">
+                👟 Footwear
+            </div>
+
+            <div class="category-card" data-category="all">
+                🛍️ All Products
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= PRODUCTS ================= -->
+
+    <section class="products" id="products">
+
+        <h2>Featured Products</h2>
+
+        <div class="product-container">
+
+            <!-- Product 1 -->
+
+            <div class="product-card" data-category="electronics">
+
+                <span class="badge">Best Seller</span>
+
+                <img src="images/Laptop.jpg" alt="Laptop">
+
+                <h3>Gaming Laptop</h3>
+
+                <p class="category">Electronics</p>
+
+                <p>Intel i7 | 16GB RAM | RTX Graphics</p>
+
+                <h4>₹79,999</h4>
+
+                <button class="details-btn">View Details</button>
+
+                <p class="details">
+                    Processor : Intel i7 <br>
+                    RAM : 16GB <br>
+                    Storage : 512GB SSD <br>
+                    Warranty : 2 Years <br>
+                    Free Delivery Available
+                </p>
+
+                <button class="cart-btn">
+                    Add to Cart
+                </button>
+
+            </div>
+
+            <!-- Product 2 -->
+
+            <div class="product-card" data-category="electronics">
+
+                <span class="badge sale">Sale</span>
+
+                <img src="images/Phone.jpg" alt="Phone">
+
+                <h3>Smart Phone</h3>
+
+                <p class="category">Electronics</p>
+
+                <p>6.7" AMOLED Display | 256GB Storage</p>
+
+                <h4>₹49,999</h4>
+
+                <button class="details-btn">View Details</button>
+
+                <p class="details">
+                    Display : 6.7 inch AMOLED <br>
+                    Storage : 256GB <br>
+                    Camera : 108MP <br>
+                    Battery : 5000mAh
+                </p>
+
+                <button class="cart-btn">
+                    Add to Cart
+                </button>
+
+            </div>
+
+            <!-- Product 3 -->
+
+            <div class="product-card" data-category="accessories">
+
+                <img src="images/Headphone.jpg" alt="Headphones">
+
+                <h3>Wireless Headphones</h3>
+
+                <p class="category">Accessories</p>
+
+                <p>Noise Cancelling | Bluetooth 5.3</p>
+
+                <h4>₹4,999</h4>
+
+                <button class="details-btn">View Details</button>
+
+                <p class="details">
+                    Bluetooth 5.3 <br>
+                    Noise Cancellation <br>
+                    40 Hours Battery <br>
+                    Fast Charging
+                </p>
+
+                <button class="cart-btn">
+                    Add to Cart
+                </button>
+
+            </div>
+
+            <!-- Product 4 -->
+
+            <div class="product-card" data-category="accessories">
+
+                <span class="badge new">New</span>
+
+                <img src="images/Watch.jpg" alt="Watch">
+
+                <h3>Smart Watch</h3>
+
+                <p class="category">Accessories</p>
+
+                <p>Heart Rate | GPS | Waterproof</p>
+
+                <h4>₹8,999</h4>
+
+                <button class="details-btn">
+                    View Details
+                </button>
+
+                <p class="details">
+                    Heart Rate Monitor <br>
+                    GPS Enabled <br>
+                    Water Resistant <br>
+                    7 Days Battery
+                </p>
+
+                <button class="cart-btn">
+                    Add to Cart
+                </button>
+
+            </div>
+            <!-- Product 5 -->
+
+            <div class="product-card" data-category="footwear">
+
+                <img src="images/Shoe.jpg" alt="Running Shoes">
+
+                <h3>Running Shoes</h3>
+
+                <p class="category">Footwear</p>
+
+                <p>Comfortable and Lightweight</p>
+
+                <h4>₹3,499</h4>
+
+                <button class="details-btn">View Details</button>
+
+                <p class="details">
+                    Brand : Nike <br>
+                    Material : Breathable Mesh <br>
+                    Sole : Rubber Grip <br>
+                    Sizes : UK 6 - UK 10 <br>
+                    Warranty : 1 Year
+                </p>
+
+                <button class="cart-btn">
+                    Add to Cart
+                </button>
+
+            </div>
+
+            <!-- Product 6 -->
+
+            <div class="product-card" data-category="accessories">
+
+                <img src="images/Bag.jpg" alt="Travel Backpack">
+
+                <h3>Travel Backpack</h3>
+
+                <p class="category">Accessories</p>
+
+                <p>Water Resistant | 35L Capacity</p>
+
+                <h4>₹2,299</h4>
+
+                <button class="details-btn">View Details</button>
+
+                <p class="details">
+                    Capacity : 35 Litres <br>
+                    Laptop Compartment : 15.6 inch <br>
+                    USB Charging Port <br>
+                    Water Resistant <br>
+                    1 Year Warranty
+                </p>
+
+                <button class="cart-btn">
+                    Add to Cart
+                </button>
+
+            </div>
+
+            <!-- Product 7 -->
+
+            <div class="product-card" data-category="clothing">
+
+                <img src="images/Shirt.jpg" alt="Casual Shirt">
+
+                <h3>Casual Shirt</h3>
+
+                <p class="category">Clothing</p>
+
+                <p>100% Cotton | Slim Fit</p>
+
+                <h4>₹1,299</h4>
+
+                <button class="details-btn">View Details</button>
+
+                <p class="details">
+                    Fabric : Premium Cotton <br>
+                    Sleeve : Full Sleeve <br>
+                    Fit : Slim Fit <br>
+                    Machine Wash <br>
+                    Sizes : S, M, L, XL
+                </p>
+
+                <button class="cart-btn">
+                    Add to Cart
+                </button>
+
+            </div>
+
+            <!-- Product 8 -->
+
+            <div class="product-card" data-category="electronics">
+
+                <img src="images/Camera.jpg" alt="DSLR Camera">
+
+                <h3>DSLR Camera</h3>
+
+                <p class="category">Electronics</p>
+
+                <p>24MP | 4K Video Recording</p>
+
+                <h4>₹65,999</h4>
+
+                <button class="details-btn">View Details</button>
+
+                <p class="details">
+                    Sensor : 24MP CMOS <br>
+                    Lens : 18-55mm <br>
+                    4K Recording <br>
+                    Wi-Fi & Bluetooth <br>
+                    2 Years Warranty
+                </p>
+
+                <button class="cart-btn">
+                    Add to Cart
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= NEWSLETTER ================= -->
+
+    <section class="newsletter">
+
+        <h2>Subscribe for Latest Offers</h2>
+
+        <p>
+            Get exclusive discounts directly to your inbox.
+        </p>
+
+        <input type="email" placeholder="Enter your Email">
+
+        <button>
+            Subscribe
+        </button>
+
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+
+    <section class="contact" id="contact">
+
+        <h2>Contact Us</h2>
+
+        <form id="contact-form">
+
+            <input type="text" id="name" placeholder="Your Name">
+
+            <input type="email" id="email" placeholder="Your Email">
+
+            <textarea id="message" rows="6" placeholder="Your Message"></textarea>
+
+            <button type="submit">
+                Send Message
+            </button>
+
+        </form>
+
+    </section>
+
+    <!-- ================= CART MODAL ================= -->
+
+    <div id="cartModal" class="modal">
+
+        <div class="modal-content">
+
+            <span class="close-cart">&times;</span>
+
+            <h2>Your Shopping Cart</h2>
+
+            <div id="cartItems">
+
+                <p>Your cart is empty.</p>
+
+            </div>
+
+            <h3>Total : ₹<span id="totalPrice">0</span></h3>
+
+            <button id="checkoutBtn">
+                Proceed to Checkout
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- ================= CHECKOUT MODAL ================= -->
+
+    <div id="checkoutModal" class="modal">
+
+        <div class="modal-content">
+
+            <span class="close-checkout">&times;</span>
+
+            <h2>Checkout</h2>
+
+            <form id="checkoutForm">
+
+                <input type="text" id="customerName" placeholder="Full Name" required>
+
+                <input type="tel" id="customerPhone" placeholder="Phone Number" required>
+
+                <input type="email" id="customerEmail" placeholder="Email Address" required>
+
+                <textarea id="customerAddress" placeholder="Delivery Address" rows="4" required></textarea>
+
+                <input type="text" id="customerCity" placeholder="City" required>
+
+                <input type="text" id="customerPincode" placeholder="Pincode" required>
+
+                <select id="paymentMethod" required>
+
+                    <option value="">
+                        Select Payment Method
+                    </option>
+
+                    <option>
+                        Cash on Delivery
+                    </option>
+
+                    <option>
+                        UPI
+                    </option>
+
+                    <option>
+                        Credit / Debit Card
+                    </option>
+
+                </select>
+
+                <button type="submit">
+                    Place Order
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+    <!-- ================= ORDER SUCCESS MODAL ================= -->
+
+    <div id="successModal" class="modal">
+
+        <div class="modal-content success-content">
+
+            <h2>🎉 Order Placed Successfully!</h2>
+
+            <p>
+                Thank you for shopping with ShopEase.
+            </p>
+
+            <p>
+                <strong>Order ID :</strong>
+                <span id="orderId"></span>
+            </p>
+
+            <p>
+                Estimated Delivery :
+                <strong>3 - 5 Business Days</strong>
+            </p>
+
+            <button id="continueShopping">
+                Continue Shopping
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================= BACK TO TOP ================= -->
+
+    <button id="topBtn">
+        ↑
+    </button>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="footer-content">
+
+            <h3>ShopEase</h3>
+
+            <p>
+                Your one-stop destination for Electronics,
+                Fashion, Accessories and Lifestyle products.
+            </p>
+
+            <br>
+
+            <p>
+                📧 support@shopease.com
+            </p>
+
+            <p>
+                📞 +91 98765 43210
+            </p>
+
+            <br>
+
+            <div class="social-icons">
+
+                <a href="#">🌐</a>
+
+                <a href="#">📘</a>
+
+                <a href="#">📸</a>
+
+                <a href="#">▶️</a>
+
+            </div>
+
+            <br>
+
+            <hr>
+
+            <br>
+
+            <p>
+                © 2026 ShopEase. All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- ================= JAVASCRIPT ================= -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
